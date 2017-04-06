@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_gravity="center"
+    android:layout_gravity="center_horizontal"
     tools:context="minyoung9913.kr.hs.emirim.gridcalculator.MainActivity">
 
     <TextView
@@ -19,13 +19,13 @@
         android:id ="@+id/edit_first"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint = "정수로 입력"
+        android:enabled="false"
         />
     <EditText
         android:id ="@+id/edit_second"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint = "정수로 입력"
+        android:enabled="false"
         />
     <GridLayout
         android:layout_width="wrap_content"
