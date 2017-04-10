@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         edit1 = (EditText)findViewById(R.id.edit1);
         edit2 = (EditText)findViewById(R.id.edit2);
-        textResult = (TextView)findViewById(textresult);
+        textResult = (TextView)findViewById(R.id.text_result);
         edit1.setOnTouchListener(editHandler);
         edit2.setOnTouchListener(editHandler);
         for(int i=0;i<butNums.length;i++){
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 int num1 = Integer.parseInt(edit1.getText().toString());
                 int num2 = Integer.parseInt(edit2.getText().toString());
-                int result = 0;
+                double result = 0;
 
                 switch(view.getId()){
                     case R.id.but_plus :
@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
                         result = num1 * num2;
                         break;
                     case R.id.but_division :
-                        result = num1 / num2;
+                        result = (double)num1 / num2;
                         break;
                 }
                 textResult.setText(result+"");
